@@ -28,9 +28,6 @@ else if(symbol==='-')
     finalResult=firstVariable-secondVariable
 else if(symbol==='%')
     finalResult=(firstVariable/100)*secondVariable
-else if(symbol==='Ac'){
-  
-}
 
     
 result.innerHTML=finalResult
