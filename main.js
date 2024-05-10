@@ -1,7 +1,7 @@
 let screen=document.querySelector('.input')
 let buttons=document.querySelectorAll('button')
 let result=document.querySelector('.result')
-let symbols=['x','/','+','-','=','DEL','%','^']
+let symbols=['√','x','/','+','-','=','AC','DEL','%','^']
 let clear=document.querySelector('.red')
 
 let value=''
@@ -30,17 +30,11 @@ else if(symbol==='%')
     finalResult=(firstVariable/100)*secondVariable
 
     
-result.innerHTML=finalResult
+result.innerHTML=Math.round(finalResult*100)/100
 firstVariable=finalResult
 secondVariable=''
   
 }
-
-let del=(first)=>{
-  let l=first.split('').splice(0,first.length-1).join('')
-  return l
-}
-
 buttons.forEach(button=>{
   button.addEventListener('click',e=>{
     value=e.target.innerHTML
