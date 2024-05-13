@@ -1,7 +1,7 @@
 let screen=document.querySelector('.input')
 let buttons=document.querySelectorAll('button')
 let result=document.querySelector('.result')
-let symbols=['√','x','/','+','-','=','AC','DEL','%','^']
+let symbols=['x','/','+','-','=','AC','DEL','%','^']
 let clear=document.querySelector('.red')
 
 let value=''
